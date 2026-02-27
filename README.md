@@ -12,7 +12,7 @@ This project demonstrates the teaching process step-by-step using MATLAB experim
 
 ---
 
-## 🎯 Learning Objectives / 教学目标
+##  Learning Objectives / 教学目标
 
 After completing this study, students should be able to:
 完成此次学习后，学生应能够：
