@@ -35,6 +35,10 @@ for i = 1:12
     xlabel('Time (s)'), ylabel('Amplitude'), title(['Signal ',num2str(i),' - 时域波形'])
     subplot(212), plot(f_s,X_amp_s,'LineWidth',1), grid on, xlim([0,fs/2])
     xlabel('Frequency (Hz)'), ylabel('Amplitude'), title(['Signal ',num2str(i),' - 频域频谱（单边）'])
-    
+
+    fileName = fullfile(outputFolder, sprintf('Signal_%02d.png', i));
+    exportgraphics(fig, fileName, 'Resolution', 300);
+    close(fig);
     fprintf('Signal %d processed!\n',i);
+    
 end
